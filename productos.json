@@ -1,0 +1,38 @@
+[
+	{
+		"nombre": "Memoria",
+		"precio": 1234.56,
+		"stock": 888,
+		"marca": "Automotive",
+		"categoria": "Rustic Cotton Bike",
+		"detalles": "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients",
+		"foto": "https://loremflickr.com/640/480/sports",
+		"envio": true,
+		"id": "2"
+	},
+	{
+		"nombre": "CPU2",
+		"precio": 1765,
+		"stock": 1876,
+		"marca": "Automotive",
+		"categoria": "Rustic Cotton Bike",
+		"detalles": "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients",
+		"foto": "https://loremflickr.com/640/480/sports",
+		"envio": false,
+		"id": "5"
+	},
+	{
+		"nombre": "'Harry Potter y la Cámara Secreta'",
+		"precio": 21000,
+		"stock": 99,
+		"marca": "Salamandra",
+		"categoria": "Libros",
+		"descripcionCorta": "Libro 2 de la Saga Harry Potter",
+		"descripcionLarga": "Harry desentraña los misterios de una siniestra cámara oculta en Hogwarts mientras lucha contra el heredero de Slytherin",
+		"edadDesde": 6,
+		"edadHasta": 0,
+		"foto": "https://m.media-amazon.com/images/I/51vyPHnXqoL._SY445_SX342_.jpg",
+		"envio": true,
+		"id": "6"
+	}
+]

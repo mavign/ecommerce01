@@ -9,7 +9,6 @@ class Servicio {
     }
 
     subirArchivoFTP = async file => {
-        //console.log(file)
         
         const client = new Client()
         client.ftp.verbose = false
@@ -24,7 +23,7 @@ class Servicio {
             console.log('***** FTP Connection OK! *****')
 
             const src = file.path            
-            const dst = `public_html/uploads/${file.filename}`            
+            const dst = `${config.FTP_DST}/${file.filename}`            
             
             console.log('Subiendo archivo por FTP...')
             //progreso de la subida de la foto al servidor de archivos por FTP
@@ -44,7 +43,7 @@ class Servicio {
             await fs.promises.unlink(src)
 
             client.close()
-            return `https://${config.FTP_USER}.000webhostapp.com/uploads/${file.filename}`
+            return `https://danielsanchez.com.ar/uploads/${config.FTP_DST}/${file.filename}`
         }
         catch (err) {
             console.log('Error de Connection FTP:', err.message)
@@ -52,7 +51,6 @@ class Servicio {
             client.close()
             return ''
         }
-        //return `http://localhost:${config.PORT}/uploads/${file.filename}`
     }
 }
 

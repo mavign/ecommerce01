@@ -16,11 +16,9 @@ class Servicio {
     }
 
     guardarProducto = async producto => {
-        const error = validar(producto)
-        /* console.log(producto) */
+        const error = validar(producto)        
         if(error) throw new Error(`Error de formato en campos del producto: ${error.details[0].message}`)
-        const productoGuardado = await this.model.guardarProducto(producto) 
-        /* console.log(productoGuardado) */
+        const productoGuardado = await this.model.guardarProducto(producto)         
         return productoGuardado
         
     }

@@ -18,8 +18,7 @@ class Servicio {
         return pedidoGuardado
     }
 
-    createPreference = async prefItems => {
-        //console.log(prefItems)
+    createPreference = async prefItems => {        
         try {
             const preferences = await preference.create(prefItems)
 

@@ -1,5 +1,4 @@
 import express from 'express'
-
 import Controlador from '../controlador/pedidos.js'
 
 class Router {

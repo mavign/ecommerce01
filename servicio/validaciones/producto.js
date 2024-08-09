@@ -2,8 +2,7 @@ import Joi from 'joi'
 
 const validar = producto => {
     const productoSchema = Joi.object({
-        nombre: Joi.string().required(),
-        codigo: Joi.string().required(),
+        nombre: Joi.string().required(),        
         precio: Joi.number().required(),
         stock: Joi.number().required(),
         marca: Joi.string().required(),

@@ -49,7 +49,8 @@ class Servicio {
             console.log('Error de Connection FTP:', err.message)
 
             client.close()
-            return ''
+            /* return '' */
+            return { error: 'Error al subir el archivo' };
         }
     }
 }
